@@ -1,0 +1,13 @@
+version: '3'
+networks:
+  app-network:
+    external: false
+services:
+  back1:
+    image: grid-back
+    container_name: back1
+    build: .
+    networks:
+      - app-network
+    ports:
+      - "8001:8000"
