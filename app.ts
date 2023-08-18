@@ -1,15 +1,25 @@
-import express, {Application, json, Request, Response} from "express";
-import mongoose from 'mongoose';
+import express, {Application, Request, Response} from "express";
 import {config} from 'dotenv'
+import cookieParser from 'cookie-parser';
+import cors from 'cors';
+import morgan from 'morgan';
+import router from './routes/index.router'
 
 const app: Application = express();
 config();
-app.use(json());
+
+app.use(morgan('dev'));
+app.use(express.json());
+app.use(cookieParser());
 app.use(express.urlencoded({extended: true}));
-const mongo_url = process.env.MONGO_URL as string
-mongoose.connect(mongo_url, {}).then(() => {
-  console.log('Connected to DB')
-});
+
+app.use(cors({
+  credentials: true,
+  origin: ['http://localhost:3001']
+}));
+
+app.use('/', router)
+
 app.get("/", (req: Request, res: Response) => {
   res.send("Healthy");
 });
