@@ -1,3 +1,7 @@
+<p align="center">
+   <img src="https://github.com/The-Aftermath-of-StackOverflow/backend/assets/76521428/61c526ff-f593-4868-a36e-d240ba5cce0c" />
+</p>
+
 # FashNet
 
 The Fashnet is an innovative application that uses AI to create personalized fashion recommendations. Users input preferences and style choices in a general conversational way, and the AI generates unique outfit suggestions, considering trends, colors, and occasions. As users engage, the AI refines its suggestions, offering a creative way to explore fashion and even find shopping options.
