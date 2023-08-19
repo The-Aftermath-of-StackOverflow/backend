@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:3001']
+  origin: ['http://localhost:3001', 'https://fashnet.live']
 }));
 
 app.use('/', router)
