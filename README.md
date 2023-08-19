@@ -14,7 +14,7 @@ Here are the steps you need to do:
 
 1. **Clone the repository** in your system, by using this command in your Git bash/Command Prompt. <br />
    ```bash
-   git clone https://github.com/The-Aftermath-of-StackOverflow/fashnest.git
+   git clone https://github.com/The-Aftermath-of-StackOverflow/backend.git
    ```
 
 2. In the project directory, go to `server` folder and run the following command in terminal: 
